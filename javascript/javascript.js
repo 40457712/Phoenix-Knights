@@ -1,5 +1,8 @@
-const fs = require("fs");
-const sdk = require("microsoft-cognitiveservices-speech-sdk");
+import fs from 'fs'
+import sdk from 'microsoft-cognitiveservices-speech-sdk'
+
+//const fs = require("fs");
+//const sdk = require("microsoft-cognitiveservices-speech-sdk");
 const speechConfig = sdk.SpeechConfig.fromSubscription("5cb2d0dcd99949f08a84ae48ed3e08db", "westeurope");
 speechConfig.speechRecognitionLanguage = "en-US";
 
